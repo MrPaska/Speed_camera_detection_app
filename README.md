@@ -18,9 +18,9 @@
 
 ### Welcome
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/1.png" alt="Welcome window" width="300" height="450"/>
-</div>
+</p>
 
 ###
 - Upon launching the system, the user is presented with two options: login and registration.
