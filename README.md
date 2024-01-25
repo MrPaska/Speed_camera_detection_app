@@ -28,9 +28,9 @@
 
 ## Login
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/2.png" alt="Login window" width="300" height="450"/>
-</div>
+</p>
 
 ###
 - The user can return to the home screen by pressing the arrow in the top right corner.
@@ -41,9 +41,9 @@
 
 ## Signup
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/3.png" alt="Signup window" width="300" height="450"/>
-</div>
+</p>
 
 ###
 - The user can return to the home screen by pressing the arrow in the top right corner.
@@ -54,9 +54,9 @@
 
 ## Camera
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/4.png" alt="Camera window" width="300" height="450"/>
-</div>
+</p>
 
 ###
 - In the "Camera" window, speed cameras are detected with the help of a smart device.
@@ -67,36 +67,36 @@
 
 ## Detected Speed Cameras
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/5.png" alt="Detected Speed Cameras window" width="300" height="450"/>
-</div>
+</p>
 
 ###
 - Pressing the "Detections" button in the bottom navigation displays a list of detected speed cameras and other information about them.
 
 ## Settings
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/6.png" alt="Settings window" width="300" height="450"/>
-</div>
+</p>
 
 ###
 - Pressing the "Settings" button in the navigation opens a window with a "Draw contours around the sign" button, a "Log out" button, and a "Paulius" account edit button showing the user's name.
 
 ## Account management
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/7.png" alt="Account management" width="300" height="450"/>
-</div>
+</p>
  
 ###
 • Pressing the account button brings up the "Account Editing" window with the option to modify account details or change the password.
 
 ## Account data
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/8.png" alt="Account data" width="300" height="450"/>
-</div>
+</p>
 
 ###
 - Pressing the "Change Account Data" button opens the "Account Details" window, which displays the current user data.
@@ -104,9 +104,9 @@
 
 ## Password change
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/9.png" alt="Password change" width="300" height="450"/>
-</div>
+</p>
 
 ###
 - Pressing the "Change Password" button opens a window with a password change form.
@@ -114,9 +114,9 @@
 
 ## Video
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/10.png" alt="video" width="300" height="450"/>
-</div>
+</p>
 
 ###
 - An additional feature has been added that allows for the detection of speed camera signs and alerts from video recordings.
@@ -125,9 +125,9 @@
 
 ## Speed camera detection
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/11.png" alt="Speed camera detection" width="300" height="450"/>
-</div>
+</p>
 
 ###
 - The speed sign recognition window from the video recording is displayed. The camera window looks exactly the same, but it includes a bottom navigation menu.
@@ -135,9 +135,9 @@
 
 ## Alert message
 
-<div style="text-align:center">
+<p align="center">
     <img src="images/12.png" alt="Alert message" width="300" height="200"/>
-</div>
+</p>
 
 ###
 - This is how the visual notification appears to the user upon recognizing an average speed camera sign, which informs about an average speed camera installed on the current section of the road.
