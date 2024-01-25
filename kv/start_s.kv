@@ -1,0 +1,53 @@
+MDScreen:
+    name: "start_sec"
+
+    MDFloatLayout:
+        md_bg_color:(1, 1, 1, 1)
+
+        MDLabel:
+            text: "D E T E C T I O N  A P P"
+            font_size: "12sp"
+            pos_hint: {"center_x": .55, "center_y": .92}
+            color: rgba(34, 34, 34, 255)
+
+        Label:
+            text: "S v e i k i !"
+            font_size: "23sp"
+            pos_hint:{"center_y": .48}
+            color: rgba(34, 34, 34, 255)
+
+        Label:
+            text: "Įnovativus greičio matuoklių aptikimas"
+            font_size: "13sp"
+            pos_hint:{"center_y": .4}
+            color: rgba(127, 127, 127, 255)
+
+        MDFlatButton:
+            text:"Prisijungimas"
+            size_hint: .66, .065
+            pos_hint: {"center_x": 0.5, "center_y": .28}
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "login"
+
+        MDFlatButton:
+            text:"Registracija"
+            size_hint: .66, .065
+            pos_hint: {"center_x": 0.5, "center_y": .19}
+            color: rgba(52, 0, 231, 255)
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "reg"
+            canvas.before:
+                Color:
+                    rgb: rgba(52, 0, 231, 255)
+                Line:
+                    width: 1.2
+                    rounded_rectangle: self.x, self.y, self.width, self.height, 5, 5, 5, 5, 100
+
+        MDFlatButton:
+            text: "Naudotis programėle kaip svečias"
+            pos_hint: {"center_x": 0.5, "center_y": .08}
+            on_release:
+                app.guest()
+

@@ -1,0 +1,118 @@
+<ChangeAccData>:
+    orientation: "vertical"
+    spacing: "20dp"
+    size_hint_y: None
+    height: "270dp"
+
+    MDTextField:
+        id: acc_name
+        hint_text: "Vardas"
+        fill_color_normal: (1,1,1,1)
+        text: app.name
+        mode: "fill"
+
+    MDTextField:
+        id: acc_surname
+        hint_text: "Pavardė"
+        fill_color_normal: (1,1,1,1)
+        text: app.surname
+        mode: "fill"
+
+    MDTextField:
+        id: acc_email
+        hint_text: "El. paštas"
+        fill_color_normal: (1,1,1,1)
+        text: app.email
+        mode: "fill"
+
+    MDTextField:
+        id: acc_password
+        hint_text: "Slaptažodis"
+        fill_color_normal: (1,1,1,1)
+        password: True
+        mode: "fill"
+
+    MDBoxLayout:
+        size_hint: .7, .5
+        pos_hint: {"center_x": 0.5}
+
+        MDLabel:
+            id: update_denied
+            text: "Netinkamas slaptažodis. Duomenys nepakeisti"
+            font_size:"12sp"
+            halign: "center"
+            color: rgba(255, 0, 0, 200)
+            opacity: 0
+
+<ChangePassword>:
+    orientation: "vertical"
+    spacing: "20dp"
+    size_hint_y: None
+    height: "130dp"
+
+    MDTextField:
+        id: old_password
+        hint_text: "Senas slaptažodis"
+        fill_color_normal: (1,1,1,1)
+        password: True
+        mode: "fill"
+
+    MDTextField:
+        id: new_password
+        hint_text: "Naujas slatažodis"
+        fill_color_normal: (1,1,1,1)
+        password: True
+        mode: "fill"
+
+    MDBoxLayout:
+        size_hint: .7, .5
+        pos_hint: {"center_x": 0.5}
+
+        MDLabel:
+            id: update_denied
+            text: "Netinkamas slaptažodis. Duomenys nepakeisti"
+            font_size:"12sp"
+            halign: "center"
+            color: rgba(255, 0, 0, 200)
+            opacity: 0
+
+<ChangeData>:
+    orientation: "vertical"
+    size_hint_y: None
+    height: self.minimum_height
+
+    BoxLayout:
+        orientation: "vertical"
+        size_hint: None, None
+        spacing: "20dp"
+        width: self.minimum_width
+        height: self.minimum_height
+        pos_hint: {"center_x": 0.5}
+
+        MDRectangleFlatIconButton:
+            icon: "account"
+            text: "Keisti paskyros duomenis"
+            theme_text_color: "Custom"
+            text_color: "black"
+            icon_color: "black"
+            line_color: "blue"
+            size_hint:(0.9, None)
+            on_release:
+                app.change_account_data()
+
+        MDRectangleFlatIconButton:
+            icon: "key-variant"
+            text: "Keisti slaptažodį"
+            theme_text_color: "Custom"
+            text_color: "black"
+            line_color: "blue"
+            icon_color: "black"
+            size_hint:(0.9, None)
+            on_release:
+                app.change_password()
+
+MDScreen:
+    name: "account"
+    ChangeData:
+    ChangeAccData:
+    ChangePassword:

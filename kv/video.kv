@@ -1,0 +1,23 @@
+MDScreen:
+    name: "video"
+    MDFloatLayout:
+        orientation: "vertical"
+
+        Image:
+            id: image
+            texture: app.image_texture
+            opacity: 1
+            size: root.size
+            allow_stretch: True
+            keep_ratio: False
+
+        MDIconButton:
+            icon: "arrow-left"
+            pos_hint:{"center_y": .95}
+            font_size: "30sp"
+            theme_text_color: "Custom"
+            text_color: rgba(255, 0, 0, 255)
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "main"
+                app.leave_video()

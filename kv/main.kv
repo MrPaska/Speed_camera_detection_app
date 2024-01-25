@@ -1,0 +1,156 @@
+MDScreen:
+    name: "main"
+    on_pre_enter: app.check_session()
+
+    MDBottomNavigation:
+        MDBottomNavigationItem:
+            name: "params"
+            text: "Parametrai"
+            icon: "cog"
+
+            MDFloatLayout:
+                MDRectangleFlatIconButton:
+                    size_hint: None, None
+                    size: "48dp", "48dp"
+                    pos_hint: {"center_x": 0.1, "center_y": 0.9}
+                    text: app.logout_btn_text
+                    icon: "logout"
+                    text_color: "black"
+                    line_color: (0,0,0,0)
+                    on_release: app.logout()
+
+                MDRectangleFlatIconButton:
+                    size_hint: None, None
+                    size: "48dp", "48dp"
+                    pos_hint: {"center_x": 0.9, "center_y": 0.9}
+                    text: app.user_name
+                    icon: "account"
+                    text_color: "black"
+                    line_color: (0,0,0,0)
+                    opacity: 1 if app.show_stat_tab else 0
+                    disabled: False if app.show_stat_tab else True
+                    on_release: app.account_management()
+
+            MDBoxLayout:
+                size_hint: .6, .07
+                pos_hint: {"center_x": .5, "center_y": .63}
+
+                MDLabel:
+                    text: "Brėžiami kontūrai aplink ženklą"
+
+                MDBoxLayout:
+                    orientation: 'horizontal'
+                    pos_hint: {"center_y": .1}
+                    Widget:
+                    MDSwitch:
+                        id: bounding_box
+                        active: True
+                        icon_active: "check"
+                        icon_active_color: "white"
+
+        MDBottomNavigationItem:
+            name: "stat"
+            text: "Aptikimai"
+            icon: "database"
+            on_tab_press:
+                app.check_session()
+                app.statistics()
+
+            MDScreen:
+                MDBoxLayout:
+                    id: stats_box
+                    orientation: "vertical"
+                    padding: "12dp", "36dp", "12dp", "12dp"
+
+        MDBottomNavigationItem:
+            name: "cam"
+            text: "Kamera"
+            icon: "camera"
+            on_leave: app.camera_off()
+
+            MDScreen:
+                MDFloatLayout:
+                    id: layout
+
+                    MDRectangleFlatIconButton:
+                        icon: "camera"
+                        text: "Įjungti kamerą"
+                        pos_hint: {"center_x": .25, "center_y": .5}
+                        theme_text_color: "Custom"
+                        text_color: "black"
+                        line_color: "blue"
+                        theme_icon_color: "Custom"
+                        icon_color: "blue"
+                        adaptive_width: True
+                        on_release:
+                            app.camera_button("server")
+
+                    MDRectangleFlatIconButton:
+                        icon: "camera"
+                        text: "Įjungti kamerą"
+                        pos_hint: {"center_x": .75, "center_y": .5}
+                        theme_text_color: "Custom"
+                        text_color: "black"
+                        line_color: "purple"
+                        theme_icon_color: "Custom"
+                        icon_color: "purple"
+                        adaptive_width: True
+                        on_release:
+                            app.camera_button("local")
+
+                MDSpinner:
+                    id: cam_spinner
+                    pos_hint: {"center_x": .5, "center_y": .15}
+                    size_hint: None, None
+                    size: dp(36), dp(36)
+                    opacity: 0
+
+                MDLabel:
+                    id: cam_label
+                    pos_hint: {"center_y": .05}
+                    text: ""
+                    halign: 'center'
+                    size_hint_y: None
+                    opacity: 0
+
+                Image:
+                    id: image
+                    texture: app.image_texture
+                    opacity: 0
+                    size: root.size
+                    allow_stretch: True
+                    keep_ratio: False
+
+                MDBoxLayout:
+                    id: zona_box
+                    pos_hint:{"center_x": .85, "center_y": .1}
+                    size_hint:(None, None)
+                    size:(120, 60)
+                    opacity: 0
+                    canvas.before:
+                        Color:
+                            rgba: 1, 1, 1, 0.8
+                        RoundedRectangle:
+                            pos: self.pos
+                            size: self.size
+                            radius: [15]
+
+        MDBottomNavigationItem:
+            text: "Video"
+            icon: "file-video"
+            on_tab_press: app.update_video_list()
+
+            MDScreen:
+                MDScrollView:
+                    MDList:
+                        id: md_list
+
+                MDRectangleFlatIconButton:
+                    icon: "upload"
+                    text: "Įkelti video"
+                    pos_hint: {"center_x": .5, "center_y": .25}
+                    theme_text_color: "Custom"
+                    text_color: "black"
+                    line_color: "blue"
+                    icon_color: "blue"
+                    on_release: app.open_filemanager()
