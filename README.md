@@ -19,7 +19,7 @@
 ### Welcome
 
 <p align="center">
-    <img src="images/1.png" alt="Welcome window" width="300" height="450"/>
+    <img src="https://github.com/user-attachments/assets/17f34461-7ba0-4dab-bb18-af39db5ec03b" alt="Welcome window" width="300" height="450"/>
 </p>
 
 ###
@@ -29,7 +29,7 @@
 ## Login
 
 <p align="center">
-    <img src="images/2.png" alt="Login window" width="300" height="450"/>
+    <img src="https://github.com/user-attachments/assets/35045e64-93df-47bb-9d48-992b410a57ea" alt="Login window" width="300" height="450"/>
 </p>
 
 ###
@@ -42,7 +42,7 @@
 ## Signup
 
 <p align="center">
-    <img src="images/3.png" alt="Signup window" width="300" height="450"/>
+    <img src="https://github.com/user-attachments/assets/df5db849-2cf5-4997-9211-ce843ee15a6d" alt="Signup window" width="300" height="450"/>
 </p>
 
 ###
@@ -55,7 +55,7 @@
 ## Camera
 
 <p align="center">
-    <img src="images/4.png" alt="Camera window" width="300" height="450"/>
+    <img src="https://github.com/user-attachments/assets/94fd992c-ff4c-48df-875b-085cf59421d5" alt="Camera window" width="300" height="450"/>
 </p>
 
 ###
@@ -68,7 +68,7 @@
 ## Detected Speed Cameras
 
 <p align="center">
-    <img src="images/5.png" alt="Detected Speed Cameras window" width="300" height="450"/>
+    <img src="https://github.com/user-attachments/assets/455aba7a-d7ac-4a23-aa6d-d7174cafa3d9" alt="Detected Speed Cameras window" width="300" height="450"/>
 </p>
 
 ###
@@ -77,7 +77,7 @@
 ## Settings
 
 <p align="center">
-    <img src="images/6.png" alt="Settings window" width="300" height="450"/>
+    <img src="https://github.com/user-attachments/assets/cf556182-17ec-4164-91a1-709d16020d55" alt="Settings window" width="300" height="450"/>
 </p>
 
 ###
@@ -86,7 +86,7 @@
 ## Account management
 
 <p align="center">
-    <img src="images/7.png" alt="Account management" width="300" height="450"/>
+    <img src="https://github.com/user-attachments/assets/3d33e689-f2e1-4fe2-ac15-d25acd2d9d6f" alt="Account management" width="300" height="450"/>
 </p>
  
 ###
@@ -95,7 +95,7 @@
 ## Account data
 
 <p align="center">
-    <img src="images/8.png" alt="Account data" width="300" height="450"/>
+    <img src="https://github.com/user-attachments/assets/5a5de56a-2da0-44f7-ac9f-3c46c13edb32" alt="Account data" width="300" height="450"/>
 </p>
 
 ###
@@ -105,7 +105,7 @@
 ## Password change
 
 <p align="center">
-    <img src="images/9.png" alt="Password change" width="300" height="450"/>
+    <img src="https://github.com/user-attachments/assets/bbd2aa74-8827-473a-a5de-3cd99a1880f9" alt="Password change" width="300" height="450"/>
 </p>
 
 ###
@@ -115,7 +115,7 @@
 ## Video
 
 <p align="center">
-    <img src="images/10.png" alt="video" width="300" height="450"/>
+    <img src="https://github.com/user-attachments/assets/2adcc3a0-d75b-4476-a591-3c87fae05760" alt="video" width="300" height="450"/>
 </p>
 
 ###
@@ -126,7 +126,7 @@
 ## Speed camera detection
 
 <p align="center">
-    <img src="images/11.png" alt="Speed camera detection" width="300" height="450"/>
+    <img src="https://github.com/user-attachments/assets/2c42f103-ce60-4bb8-98a0-eb5c53c38326" alt="Speed camera detection" width="300" height="450"/>
 </p>
 
 ###
@@ -136,7 +136,7 @@
 ## Alert message
 
 <p align="center">
-    <img src="images/12.png" alt="Alert message" width="300" height="200"/>
+    <img src="https://github.com/user-attachments/assets/b9300467-59d5-4fa1-89f8-bff8ee0deb23" alt="Alert message" width="300" height="200"/>
 </p>
 
 ###
